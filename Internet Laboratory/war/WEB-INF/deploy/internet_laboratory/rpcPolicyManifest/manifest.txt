@@ -1,0 +1,3 @@
+# Module internet_laboratory
+# RPC service class, partial path of RPC policy file
+internet.laboratory.client.GreetingService, 900C57998BA77882171C1645F176EF24.gwt.rpc

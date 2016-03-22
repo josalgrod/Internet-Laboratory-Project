@@ -1,0 +1,2 @@
+serviceClass: internet.laboratory.client.GreetingService
+path: 900C57998BA77882171C1645F176EF24.gwt.rpc
