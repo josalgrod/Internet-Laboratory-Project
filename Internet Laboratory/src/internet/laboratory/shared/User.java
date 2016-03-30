@@ -39,7 +39,7 @@ public class User implements Serializable {
 	private String Name;
 
 	@Persistent
-	private GregorianCalendar DateOfBirth;
+	private GregorianCalendar Birthdate;
 
 	@Persistent
 	private String Phone;
@@ -47,14 +47,13 @@ public class User implements Serializable {
 	@Persistent
 	private String Email;
 
-	public User(Key id_User, String username, String password, String name,
-			GregorianCalendar dateOfBirth, String phone, String email) {
+	public User(String username, String password, String name,
+			GregorianCalendar birthdate, String phone, String email) {
 		super();
-		Id_User = id_User;
 		Username = username;
 		Password = password;
 		Name = name;
-		DateOfBirth = dateOfBirth;
+		Birthdate = birthdate;
 		Phone = phone;
 		Email = email;
 	}
@@ -82,13 +81,13 @@ public class User implements Serializable {
 	public void setName(String name) {
 		Name = name;
 	}
-
-	public GregorianCalendar getDateOfBirth() {
-		return DateOfBirth;
+	
+	public GregorianCalendar getBirthdate() {
+		return Birthdate;
 	}
 
-	public void setDateOfBirth(GregorianCalendar dateOfBirth) {
-		DateOfBirth = dateOfBirth;
+	public void setBirthdate(GregorianCalendar birthdate) {
+		Birthdate = birthdate;
 	}
 
 	public String getPhone() {

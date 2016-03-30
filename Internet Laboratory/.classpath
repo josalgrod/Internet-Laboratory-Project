@@ -5,7 +5,7 @@
 	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
 	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/Usuario/Documents/Internet-Laboratory-Project/Internet Laboratory/gwt-maps.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pepe/Downloads/gwt-maps.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/com.springsource.org.codehaus.jackson.mapper-1.4.2.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/org.codehaus.jackson.core.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/org.restlet.ext.gae.jar"/>
