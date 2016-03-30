@@ -67,7 +67,8 @@ public class User implements Serializable {
 	}
 
 	public void setUsername(String username) {
-		Username = username;
+		if (checkUserName(username))
+			Username = username;
 	}
 
 	public String getPassword() {
@@ -75,6 +76,7 @@ public class User implements Serializable {
 	}
 
 	public void setPassword(String password) {
+		if(checkPassword(password))
 		Password = password;
 	}
 
@@ -83,6 +85,7 @@ public class User implements Serializable {
 	}
 
 	public void setName(String name) {
+		if(checkName(name))
 		Name = name;
 	}
 
@@ -91,6 +94,7 @@ public class User implements Serializable {
 	}
 
 	public void setBirthdate(GregorianCalendar birthdate) {
+		if(checkBirthdate(birthdate))
 		Birthdate = birthdate;
 	}
 
@@ -99,6 +103,7 @@ public class User implements Serializable {
 	}
 
 	public void setPhone(String phone) {
+		if(checkPhone(phone))
 		Phone = phone;
 	}
 
@@ -107,6 +112,7 @@ public class User implements Serializable {
 	}
 
 	public void setEmail(String email) {
+		if (checkEmail(email))
 		Email = email;
 	}
 
