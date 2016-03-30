@@ -1,4 +1,4 @@
-package internet.laboratory.client;
+package internet.laboratory.shared;
 
 import java.util.GregorianCalendar;
 
@@ -48,14 +48,20 @@ public class Event {
     
     @Persistent
     private Boolean BringOwnAlcohol;
-    
-    @Persistent
-    private String AgeNeeded;
 
+    @Persistent
+    private Integer AgeNeeded;
+
+    @Persistent
+    private String Description;
+    
+    
+    
+    
 	public Event(Key id_Event, String name, GregorianCalendar date,
 			String address, String phone, String mail, Double price,
 			Integer maxPeople, TypeEvent type, String dresscode,
-			Boolean bringOwnAlcohol, String ageNeeded) {
+			Boolean bringOwnAlcohol, Integer ageNeeded,String description) {
 		super();
 		Id_Event = id_Event;
 		Name = name;
@@ -69,6 +75,7 @@ public class Event {
 		Dresscode = dresscode;
 		BringOwnAlcohol = bringOwnAlcohol;
 		AgeNeeded = ageNeeded;
+		Description = description;
 	}
 
 	public Key getId_Event() {
@@ -163,12 +170,20 @@ public class Event {
 		BringOwnAlcohol = bringOwnAlcohol;
 	}
 
-	public String getAgeNeeded() {
+	public Integer getAgeNeeded() {
 		return AgeNeeded;
 	}
 
-	public void setAgeNeeded(String ageNeeded) {
+	public void setAgeNeeded(Integer ageNeeded) {
 		AgeNeeded = ageNeeded;
+	}
+
+	public String getDescription() {
+		return Description;
+	}
+
+	public void setDescription(String description) {
+		Description = description;
 	}
  
 	
