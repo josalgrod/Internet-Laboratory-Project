@@ -1,15 +1,26 @@
 package internet.laboratory.shared;
 
+import java.io.Serializable;
 import java.util.GregorianCalendar;
+import java.util.Set;
 
 import javax.jdo.annotations.ForeignKey;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
+import javax.persistence.CascadeType;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
 
 import com.google.appengine.api.datastore.Key;
 
-public class User {
+public class User implements Serializable {
+
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
@@ -100,4 +111,6 @@ public class User {
 		return Id_User;
 	}
 
+	@OneToMany(mappedBy = "User_Event", cascade = CascadeType.REFRESH, fetch=FetchType.LAZY) 
+	private Set<Event_User> userEvent;
 }

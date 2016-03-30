@@ -1,22 +1,34 @@
 package internet.laboratory.shared;
 
+import java.io.Serializable;
+import java.util.Set;
+
 import javax.jdo.annotations.ForeignKey;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
+import javax.persistence.CascadeType;
+import javax.persistence.FetchType;
+import javax.persistence.ManyToOne;
 
-public class Event_User {
+
+public class Event_User implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@PrimaryKey
-    @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-    private Integer Id_Event_User ;
-	
+	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+	private Integer Id_Event_User;
+
 	@ForeignKey
 	private Integer Id_Event;
-	
+
 	@ForeignKey
 	private Integer Id_User;
-	
+
 	@Persistent
 	private Boolean Participation;
 
@@ -52,8 +64,11 @@ public class Event_User {
 	public Integer getId_User() {
 		return Id_User;
 	}
-	
-	
-	
-	
+
+	@ManyToOne(targetEntity = Event.class, cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
+	private Set<Event_User> eventUser;
+
+	@ManyToOne(targetEntity = User.class, cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
+	private Set<Event_User> userEvent;
+
 }
