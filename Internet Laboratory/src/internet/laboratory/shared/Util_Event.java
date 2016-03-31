@@ -74,8 +74,11 @@ public class Util_Event {
 		
 	}
 		
-	public void deleteEvent(){
-		
+	public void deleteEvent(Event e){
+		PersistenceManager pm = PMF.get().getPersistenceManager();
+		 pm.deletePersistent(e);
 	}
+	
+	
 	
 }
