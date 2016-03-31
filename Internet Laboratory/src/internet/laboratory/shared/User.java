@@ -162,7 +162,7 @@ public class User implements Serializable {
 
 	private boolean checkBirthdate(GregorianCalendar birthdate) {
 		GregorianCalendar current = new GregorianCalendar();
-		return birthdate.before(current);
+		return birthdate.before(current) && birthdate != null;
 	}
 
 	private boolean checkName(String name) {
@@ -170,7 +170,7 @@ public class User implements Serializable {
 		for (int i = 0; i < name.length(); i++) {
 			char espace = ' ';
 			if (Character.isAlphabetic(name.charAt(i))
-					|| name.charAt(i) == espace) {
+					|| name.charAt(i) == espace && name != null) {
 				res = true;
 			}
 		}
@@ -184,7 +184,7 @@ public class User implements Serializable {
 			if (Character.isAlphabetic(password.charAt(i))
 					|| Character.isDigit(password.charAt(i))
 					&& password.charAt(i) != espace && password.length() > 5
-					&& password.length() < 16) {
+					&& password.length() < 16 && password != null) {
 				res = true;
 			}
 		}

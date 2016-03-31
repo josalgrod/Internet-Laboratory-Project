@@ -237,7 +237,7 @@ public class Event implements Serializable {
 		for (int i = 0; i < name.length(); i++) {
 			char espace = ' ';
 			if (Character.isAlphabetic(name.charAt(i))
-					|| name.charAt(i) == espace) {
+					|| name.charAt(i) == espace && name != null) {
 				res = true;
 			}
 		}
@@ -246,7 +246,7 @@ public class Event implements Serializable {
 
 	private boolean checkDate(GregorianCalendar date) {
 		GregorianCalendar current = new GregorianCalendar();
-		return date.before(current);
+		return date.before(current) && date != null;
 	}
 
 	private boolean checkDescription(String description) {
@@ -263,7 +263,7 @@ public class Event implements Serializable {
 	}
 
 	private boolean checkPrice(Double price) {
-		return price != null;
+		return price >= 0;
 	}
 
 	private boolean checkAddress(String address) {
@@ -280,7 +280,7 @@ public class Event implements Serializable {
 	}
 
 	private boolean checkAgeNeeded(Integer ageNeeded) {
-		return ageNeeded.compareTo(getAgeNeeded()) >= 0;
+		return ageNeeded.compareTo(getAgeNeeded()) > 0;
 	}
 
 	@OneToMany(mappedBy = "Event_User", cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
