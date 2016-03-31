@@ -3,8 +3,6 @@ package internet.laboratory.shared;
 import java.io.Serializable;
 import java.util.Set;
 
-import javax.jdo.annotations.ForeignKey;
-import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
@@ -12,7 +10,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
 
-@PersistenceCapable(objectIdClass=ComposedIdKey.class)
+@PersistenceCapable(objectIdClass = ComposedIdKey.class)
 public class Event_User implements Serializable {
 
 	/**
@@ -22,14 +20,12 @@ public class Event_User implements Serializable {
 
 	@PrimaryKey
 	private String Id_Event;
-	
+
 	@PrimaryKey
 	private String Id_User;
-	
+
 	@Persistent
 	private Boolean Participation;
-
-	
 
 	public Event_User(String id_Event, String id_User, Boolean participation) {
 		super();
@@ -37,7 +33,6 @@ public class Event_User implements Serializable {
 		Id_User = id_User;
 		Participation = participation;
 	}
-	
 
 	public Boolean getParticipation() {
 		return Participation;
@@ -54,8 +49,6 @@ public class Event_User implements Serializable {
 	public String getId_User() {
 		return Id_User;
 	}
-
-
 
 	@ManyToOne(targetEntity = Event.class, cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
 	private Set<Event_User> eventUser;

@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.GregorianCalendar;
 import java.util.Set;
 
-
 import javax.jdo.annotations.Extension;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.Persistent;
@@ -12,8 +11,6 @@ import javax.jdo.annotations.PrimaryKey;
 import javax.persistence.CascadeType;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
-
-import com.google.appengine.api.datastore.Key;
 
 public class User implements Serializable {
 
@@ -24,9 +21,9 @@ public class User implements Serializable {
 
 	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-	@Extension(vendorName="datanucleus", key="gae.encoded-pk", value="true")
+	@Extension(vendorName = "datanucleus", key = "gae.encoded-pk", value = "true")
 	private String Id_User;
-	
+
 	@Persistent
 	private String Username;
 
@@ -75,8 +72,8 @@ public class User implements Serializable {
 	}
 
 	public void setPassword(String password) {
-		if(checkPassword(password))
-		Password = password;
+		if (checkPassword(password))
+			Password = password;
 	}
 
 	public String getName() {
@@ -84,8 +81,8 @@ public class User implements Serializable {
 	}
 
 	public void setName(String name) {
-		if(checkName(name))
-		Name = name;
+		if (checkName(name))
+			Name = name;
 	}
 
 	public GregorianCalendar getBirthdate() {
@@ -93,8 +90,8 @@ public class User implements Serializable {
 	}
 
 	public void setBirthdate(GregorianCalendar birthdate) {
-		if(checkBirthdate(birthdate))
-		Birthdate = birthdate;
+		if (checkBirthdate(birthdate))
+			Birthdate = birthdate;
 	}
 
 	public String getPhone() {
@@ -102,8 +99,8 @@ public class User implements Serializable {
 	}
 
 	public void setPhone(String phone) {
-		if(checkPhone(phone))
-		Phone = phone;
+		if (checkPhone(phone))
+			Phone = phone;
 	}
 
 	public String getEmail() {
@@ -112,15 +109,12 @@ public class User implements Serializable {
 
 	public void setEmail(String email) {
 		if (checkEmail(email))
-		Email = email;
+			Email = email;
 	}
 
 	public String getId_User() {
 		return Id_User;
 	}
-	
-	
-	
 
 	@Override
 	public int hashCode() {
@@ -146,8 +140,6 @@ public class User implements Serializable {
 			return false;
 		return true;
 	}
-	
-	
 
 	@Override
 	public String toString() {

@@ -5,7 +5,6 @@ import java.util.GregorianCalendar;
 import java.util.Set;
 
 import javax.jdo.annotations.Extension;
-import javax.jdo.annotations.ForeignKey;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
@@ -13,9 +12,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 
-import com.google.appengine.api.datastore.Key;
-
-public class Event implements Serializable{
+public class Event implements Serializable {
 
 	/**
 	 * 
@@ -23,67 +20,68 @@ public class Event implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	@PrimaryKey
-    @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-	@Extension(vendorName="datanucleus", key="gae.encoded-pk", value="true")
-    private String Id_Event;
+	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+	@Extension(vendorName = "datanucleus", key = "gae.encoded-pk", value = "true")
+	private String Id_Event;
 
-    @Persistent
-    private String Name;
+	@Persistent
+	private String Name;
 
-    @Persistent
-    private GregorianCalendar Date;
+	@Persistent
+	private GregorianCalendar Date;
 
-    @Persistent
-    private String Address;
-    
-    @Persistent
-    private String Phone;
-    	
-    @Persistent
-    private String Email;
-    
-    @Persistent
-    private Double Price;
-    
-    @Persistent
-    private Integer MaxPeople;
-    
-    @Persistent
-    private TypeEvent Type;
-    
-    @Persistent
-    private String Dresscode;
-    
-    @Persistent
-    private Boolean BringOwnAlcohol;
+	@Persistent
+	private String Address;
 
-    @Persistent
-    private Integer AgeNeeded;
+	@Persistent
+	private String Phone;
 
-    @Persistent
-    private String Description;
-    
-    
-    
-    
-	public Event(String name, GregorianCalendar date,
-			String address, String phone, String email, Double price,
-			Integer maxPeople, TypeEvent type, String dresscode,
-			Boolean bringOwnAlcohol, Integer ageNeeded,String description) {
+	@Persistent
+	private String Email;
+
+	@Persistent
+	private Double Price;
+
+	@Persistent
+	private Integer MaxPeople;
+
+	@Persistent
+	private TypeEvent Type;
+
+	@Persistent
+	private String Dresscode;
+
+	@Persistent
+	private Boolean BringOwnAlcohol;
+
+	@Persistent
+	private Integer AgeNeeded;
+
+	@Persistent
+	private String Description;
+
+	public Event(String name, GregorianCalendar date, String address,
+			String phone, String email, Double price, Integer maxPeople,
+			TypeEvent type, String dresscode, Boolean bringOwnAlcohol,
+			Integer ageNeeded, String description) {
 		super();
-	
-		Name = name;
-		Date = date;
-		Address = address;
-		Phone = phone;
-		Email = email;
-		Price = price;
-		MaxPeople = maxPeople;
-		Type = type;
-		Dresscode = dresscode;
-		BringOwnAlcohol = bringOwnAlcohol;
-		AgeNeeded = ageNeeded;
-		Description = description;
+		if (checkName(name) && checkDate(date) && checkAddress(address)
+				&& checkPhone(phone) && checkEmail(email) && checkPrice(price)
+				&& checkMaxPeople(maxPeople) && checkType(type)
+				&& checkAgeNeeded(ageNeeded) && checkDescription(description)) {
+			Name = name;
+			Date = date;
+			Address = address;
+			Phone = phone;
+			Email = email;
+			Price = price;
+			MaxPeople = maxPeople;
+			Type = type;
+			Dresscode = dresscode;
+			BringOwnAlcohol = bringOwnAlcohol;
+			AgeNeeded = ageNeeded;
+			Description = description;
+		}
 	}
 
 	public String getId_Event() {
@@ -185,9 +183,7 @@ public class Event implements Serializable{
 	public void setDescription(String description) {
 		Description = description;
 	}
-	
-	
- 
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -214,9 +210,6 @@ public class Event implements Serializable{
 		return true;
 	}
 
-	
-
-
 	@Override
 	public String toString() {
 		return "Event [Id_Event=" + Id_Event + ", Name=" + Name + ", Date="
@@ -226,8 +219,6 @@ public class Event implements Serializable{
 				+ ", BringOwnAlcohol=" + BringOwnAlcohol + ", AgeNeeded="
 				+ AgeNeeded + ", Description=" + Description + "]";
 	}
-
-
 
 	private boolean checkEmail(String email) {
 		return !email.isEmpty() && email.contains("@");
@@ -241,14 +232,58 @@ public class Event implements Serializable{
 				&& Character.isDigit(7) && Character.isDigit(8);
 	}
 
-	private boolean checkBirthdate(GregorianCalendar date) {
-		GregorianCalendar current = new GregorianCalendar();
-		return date.after(current);
+	private boolean checkName(String name) {
+		boolean res = false;
+		for (int i = 0; i < name.length(); i++) {
+			char espace = ' ';
+			if (Character.isAlphabetic(name.charAt(i))
+					|| name.charAt(i) == espace) {
+				res = true;
+			}
+		}
+		return res;
 	}
-	
 
-	@OneToMany(mappedBy = "Event_User", cascade = CascadeType.REFRESH, fetch=FetchType.LAZY) 
+	private boolean checkDate(GregorianCalendar date) {
+		GregorianCalendar current = new GregorianCalendar();
+		return date.before(current);
+	}
+
+	private boolean checkDescription(String description) {
+		return description.length() <= 500;
+	}
+
+	private boolean checkType(TypeEvent type) {
+		return type.equals(TypeEvent.MUSIC) || type.equals(TypeEvent.OTHER)
+				|| type.equals(TypeEvent.PARTY) || type.equals(TypeEvent.SPORT);
+	}
+
+	private boolean checkMaxPeople(Integer maxPeople) {
+		return maxPeople != null && maxPeople > 0;
+	}
+
+	private boolean checkPrice(Double price) {
+		return price != null;
+	}
+
+	private boolean checkAddress(String address) {
+		boolean res = false;
+		for (int i = 0; i < address.length(); i++) {
+			char espace = ' ';
+			if (Character.isAlphabetic(address.charAt(i))
+					|| Character.isDigit(address.charAt(i))
+					&& address.charAt(i) == espace) {
+				res = true;
+			}
+		}
+		return res;
+	}
+
+	private boolean checkAgeNeeded(Integer ageNeeded) {
+		return ageNeeded.compareTo(getAgeNeeded()) >= 0;
+	}
+
+	@OneToMany(mappedBy = "Event_User", cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
 	private Set<Event_User> eventUser;
-	
-	
+
 }
