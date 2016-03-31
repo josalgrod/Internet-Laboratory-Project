@@ -70,6 +70,7 @@ public class Util_Event {
                 "where Name == NameParam " +
                 "parameters String NameParam");
 		List<Event> results = (List<Event>)q.execute(name);	
+		pm.close();
 		return results;
 		
 	}
@@ -77,6 +78,7 @@ public class Util_Event {
 	public void deleteEvent(Event e){
 		PersistenceManager pm = PMF.get().getPersistenceManager();
 		 pm.deletePersistent(e);
+		 pm.close();
 	}
 	
 	
