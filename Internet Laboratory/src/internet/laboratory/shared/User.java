@@ -4,7 +4,8 @@ import java.io.Serializable;
 import java.util.GregorianCalendar;
 import java.util.Set;
 
-import javax.jdo.annotations.ForeignKey;
+
+import javax.jdo.annotations.Extension;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
@@ -23,11 +24,9 @@ public class User implements Serializable {
 
 	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-	private Key Id_User;
-
-	@ForeignKey
-	private Key Id_Event_User;
-
+	@Extension(vendorName="datanucleus", key="gae.encoded-pk", value="true")
+	private String Id_User;
+	
 	@Persistent
 	private String Username;
 
@@ -116,8 +115,45 @@ public class User implements Serializable {
 		Email = email;
 	}
 
-	public Key getId_User() {
+	public String getId_User() {
 		return Id_User;
+	}
+	
+	
+	
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((Id_User == null) ? 0 : Id_User.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		User other = (User) obj;
+		if (Id_User == null) {
+			if (other.Id_User != null)
+				return false;
+		} else if (!Id_User.equals(other.Id_User))
+			return false;
+		return true;
+	}
+	
+	
+
+	@Override
+	public String toString() {
+		return "User [Id_User=" + Id_User + ", Username=" + Username
+				+ ", Password=" + Password + ", Name=" + Name + ", Birthdate="
+				+ Birthdate + ", Phone=" + Phone + ", Email=" + Email + "]";
 	}
 
 	private boolean checkEmail(String email) {
