@@ -280,7 +280,11 @@ public class Event implements Serializable {
 	}
 
 	private boolean checkAgeNeeded(Integer ageNeeded) {
-		return ageNeeded.compareTo(getAgeNeeded()) > 0;
+		boolean res = false;
+		if (ageNeeded > 0){
+			res = true;
+		}
+		return res;
 	}
 
 	@OneToMany(mappedBy = "Event_User", cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
