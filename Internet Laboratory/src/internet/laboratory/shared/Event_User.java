@@ -20,7 +20,7 @@ public class Event_User implements Serializable {
 
 	@PrimaryKey
 	private String Id_Event;
-
+	
 	@PrimaryKey
 	private String Id_User;
 

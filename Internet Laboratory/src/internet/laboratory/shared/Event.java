@@ -6,12 +6,16 @@ import java.util.Set;
 
 import javax.jdo.annotations.Extension;
 import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 import javax.persistence.CascadeType;
+import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 
+@PersistenceCapable
+@Entity
 public class Event implements Serializable {
 
 	/**
@@ -281,7 +285,7 @@ public class Event implements Serializable {
 
 	private boolean checkAgeNeeded(Integer ageNeeded) {
 		boolean res = false;
-		if (ageNeeded > 0){
+		if (ageNeeded > 0) {
 			res = true;
 		}
 		return res;
