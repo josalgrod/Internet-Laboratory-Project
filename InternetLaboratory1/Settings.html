@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<title>Profile</title>
+		<title>Settings</title>
 	</head>
 	<body>
 		<div>
@@ -33,29 +33,42 @@
 		<div>
 			<h2>Your profile information</h2>
 			<p>
-				<label id="nameProfile">Name:</label>
-				<label id="nameTextProfile"> </label>
+				<label id="nameSettings">Name:</label>
+				<input type="text"/>
 			</p>
 			<p>
-				<label id="userProfile">User:</label>
-				<label id="userTextProfile"> </label>
+				<label id="userSettings">User:</label>
+				<input type="text"/>
 			</p>
 			<p>
-				<label id="birthdateProfile">Birthdate:</label>
-				<label id="birthdateTextProfile"> </label>
+				<label id="passwordSettings">Password:</label>
+				<input type="password"/>
 			</p>
 			<p>
-				<label id="emailProfile">Email:</label>
-				<label id="emailTextProfile"> </label>
+				<label id="retypePasswordSettings">Retype password:</label>
+				<input type="password"/>
+			</p>
+			<p>
+				<label id="birthdateSettings">Birthdate:</label>
+				<input type="datetime"/>
+			</p>
+			<p>
+				<label id="emailSettings">Email:</label>
+				<input type="email"/>
 			</p>
 			<p>
 				<label id="phoneProfile">Phone:</label>
-				<label id="phoneTextProfile"> </label>
+				<input type="tel"/>
 			</p>
+			<button id="submitSettings" type="submit">
+				Submit
+			</button>
 		</div>
 		<div>
 			<img id="imageProfile"/>
-			<label id="nameProfileImage">Name</label>
+			<form method="post">
+				<input type="file"/>
+			</form>
 		</div>
 	</body>
 </html>
