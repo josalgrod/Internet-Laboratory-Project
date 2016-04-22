@@ -69,8 +69,8 @@ public class Event implements Serializable {
 			TypeEvent type, String dresscode, Boolean bringOwnAlcohol,
 			Integer ageNeeded, String description) {
 		super();
-		if (checkName(name) && checkDate(date) && checkAddress(address)
-				&& checkPhone(phone) && checkEmail(email) && checkPrice(price)
+		if (checkName(name) && checkDate(date) 
+				&& checkAllNumbers(phone) && checkEmail(email) && checkPrice(price)
 				&& checkMaxPeople(maxPeople) && checkType(type)
 				&& checkAgeNeeded(ageNeeded) && checkDescription(description)) {
 			Name = name;
@@ -228,24 +228,18 @@ public class Event implements Serializable {
 		return !email.isEmpty() && email.contains("@");
 	}
 
-	private boolean checkPhone(String phone) {
-		return phone.length() == 9 && Character.isDigit(0)
-				&& Character.isDigit(1) && Character.isDigit(2)
-				&& Character.isDigit(3) && Character.isDigit(4)
-				&& Character.isDigit(5) && Character.isDigit(6)
-				&& Character.isDigit(7) && Character.isDigit(8);
+	private boolean checkAllNumbers(String s) {
+		try{
+			Integer.parseInt(s);
+		}
+		catch(NumberFormatException e){
+			return false;
+		}
+		return true;
 	}
 
 	private boolean checkName(String name) {
-		boolean res = false;
-		for (int i = 0; i < name.length(); i++) {
-			char espace = ' ';
-			if (Character.isAlphabetic(name.charAt(i))
-					|| name.charAt(i) == espace && name != null) {
-				res = true;
-			}
-		}
-		return res;
+		return !checkAllNumbers(name);
 	}
 
 	private boolean checkDate(Date date) {
@@ -268,19 +262,6 @@ public class Event implements Serializable {
 
 	private boolean checkPrice(Double price) {
 		return price >= 0;
-	}
-
-	private boolean checkAddress(String address) {
-		boolean res = false;
-		for (int i = 0; i < address.length(); i++) {
-			char espace = ' ';
-			if (Character.isAlphabetic(address.charAt(i))
-					|| Character.isDigit(address.charAt(i))
-					&& address.charAt(i) == espace) {
-				res = true;
-			}
-		}
-		return res;
 	}
 
 	private boolean checkAgeNeeded(Integer ageNeeded) {
