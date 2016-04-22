@@ -32,42 +32,42 @@
 		</p>
 		<div>
 			<h2>Your profile information</h2>
-			<p>
-				<label id="nameSettings">Name:</label>
-				<input type="text"/>
-			</p>
-			<p>
-				<label id="userSettings">User:</label>
-				<input type="text"/>
-			</p>
-			<p>
-				<label id="passwordSettings">Password:</label>
-				<input type="password"/>
-			</p>
-			<p>
-				<label id="retypePasswordSettings">Retype password:</label>
-				<input type="password"/>
-			</p>
-			<p>
-				<label id="birthdateSettings">Birthdate:</label>
-				<input type="datetime"/>
-			</p>
-			<p>
-				<label id="emailSettings">Email:</label>
-				<input type="email"/>
-			</p>
-			<p>
-				<label id="phoneProfile">Phone:</label>
-				<input type="tel"/>
-			</p>
-			<button id="submitSettings" type="submit">
-				Submit
-			</button>
+			<form id="profileSettings" method="post">
+				<p>
+					<label id="nameSettings">Name:</label>
+					<input type="text" required="required"/>
+				</p>
+				<p>
+					<label id="userSettings">User:</label>
+					<input type="text" required="required"/>
+				</p>
+				<p>
+					<label id="passwordSettings">Password:</label>
+					<input type="password" required="required"/>
+				</p>
+				<p>
+					<label id="retypePasswordSettings">Retype password:</label>
+					<input type="password" required="required"/>
+				</p>
+				<p>
+					<label id="birthdateSettings">Birthdate:</label>
+					<input type="datetime" required="required"/>
+				</p>
+				<p>
+					<label id="emailSettings">Email:</label>
+					<input type="email" required="required"/>
+				</p>
+				<p>
+					<label id="phoneProfile">Phone:</label>
+					<input type="tel" required="required"/>
+				</p>
+				<input type="submit" value="Submit"/>
+			</form>
 		</div>
 		<div>
 			<img id="imageProfile"/>
 			<form method="post">
-				<input type="file"/>
+				<input id="browse" type="file" value="Browse"/>
 			</form>
 		</div>
 	</body>
