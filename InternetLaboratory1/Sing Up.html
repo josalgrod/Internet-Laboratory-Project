@@ -7,12 +7,12 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Party & Go</title>
+  <title>Sing Up</title>
   <meta name="description" content="">
   <meta name="author" content="Usuario">
 
   <meta name="viewport" content="width=device-width; initial-scale=1.0">
- 
+
   <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -21,21 +21,25 @@
 <body>
   <div>
     <header>
-      <h1>Party & Go</h1>
-    	<h3>What's up?</h3>
+      <h1>Sing Up</h1>
     </header>
+    
     <div>
-      <form method="post" action="">
-      	<p>Introduce your email:</p>
-      	<input type="email" name="emailLogin" id="emailLogin"/>
-      	<p>Introduce your password:</p>
-      	<input type="password" name="passwordLogin" id="passwordLogin" />
-      <input type="submit" name="submit" id="submit" />
-      <button type="button" onclick="Sing Up.html" id="register" name="register">Sing Up</button>
-      </form>
+    
+    <form>
+   	<p>Name:</p>
+    <input type="text" name="nameRegister" id="nameRegister" required="required"/>
+    <p>Email:</p>
+    <input type="email" name="emailRegister" id="emailRegister" required="required"/>
+    <p>Password:</p>
+    <input type="password" name="passwordRegister" id="passwordRegister" required="required" />
+    <p>Re-type Password:</p>
+    <input type="password" name="repytePasswordRegister" id="repytePasswordRegister" required="required" />
+    <input type="submit" name="Sign Up" id="Sign up" />
+    </form>  
     </div>
-	<!--Tenemos que añadir el boton de login con facebook -->
-	<footer>
+
+    <footer>
      <p>&copy; Copyright  by Usuario</p>
     </footer>
   </div>
