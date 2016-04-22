@@ -1,14 +1,11 @@
 package internet.laboratory.shared;
 
 import java.io.Serializable;
-import java.util.Set;
+import java.util.List;
 
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
-import javax.persistence.CascadeType;
-import javax.persistence.FetchType;
-import javax.persistence.ManyToOne;
 
 @PersistenceCapable(objectIdClass = ComposedIdKey.class)
 public class Event_User implements Serializable {
@@ -49,11 +46,17 @@ public class Event_User implements Serializable {
 	public String getId_User() {
 		return Id_User;
 	}
-
+	
+	@Persistent(mappedBy = "users")
+	private List<User> users;
+	@Persistent(mappedBy = "events")
+	private List<Event> events;
+	
+/*
 	@ManyToOne(targetEntity = Event.class, cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
 	private Set<Event_User> eventUser;
 
 	@ManyToOne(targetEntity = User.class, cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
 	private Set<Event_User> userEvent;
-
+*/
 }

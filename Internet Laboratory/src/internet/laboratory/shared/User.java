@@ -197,6 +197,10 @@ public class User implements Serializable {
 		return !username.isEmpty();
 	}
 
-	@OneToMany(mappedBy = "User_Event", cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
-	private Set<Event_User> userEvent;
+	
+	@Persistent
+	private Event_User users;
+	
+//	@OneToMany(mappedBy = "User_Event", cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
+//	private Set<Event_User> userEvent;
 }

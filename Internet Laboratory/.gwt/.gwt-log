@@ -471,3 +471,349 @@ Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
       Compiling...
          Compilation completed in 0,05 seconds
       Removing invalidated units
+Public resources found in...
+   Unexpected entry in classpath; C:\Users\Usuario\git\Internet-Laboratory-Project\Internet Laboratory\test is neither a directory nor an archive (.jar or .zip)
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2737 units from cache.
+Compiling...
+   50% complete (ETR: 4 seconds)
+   50% complete (ETR: 4 seconds)
+   50% complete (ETR: 4 seconds)
+   50% complete (ETR: 4 seconds)
+   50% complete (ETR: 4 seconds)
+   50% complete (ETR: 4 seconds)
+   60% complete (ETR: 3 seconds)
+   70% complete (ETR: 2 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 14,57 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+   Unexpected entry in classpath; C:\Users\Usuario\git\Internet-Laboratory-Project\Internet Laboratory\test is neither a directory nor an archive (.jar or .zip)
+Translatable source found in...
+Found 2737 cached/archived units.  Used 2737 / 2737 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+   Unexpected entry in classpath; C:\Users\Usuario\git\Internet-Laboratory-Project\Internet Laboratory\test is neither a directory nor an archive (.jar or .zip)
+Translatable source found in...
+Found 2737 cached/archived units.  Used 2737 / 2737 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+   Unexpected entry in classpath; C:\Users\Usuario\git\Internet-Laboratory-Project\Internet Laboratory\test is neither a directory nor an archive (.jar or .zip)
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2737 units from cache.
+Compiling...
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   60% complete (ETR: 3 seconds)
+   70% complete (ETR: 2 seconds)
+   80% complete (ETR: 1 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 11,49 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+   Unexpected entry in classpath; C:\Users\Usuario\git\Internet-Laboratory-Project\Internet Laboratory\test is neither a directory nor an archive (.jar or .zip)
+Translatable source found in...
+Found 2737 cached/archived units.  Used 2737 / 2737 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+   Unexpected entry in classpath; C:\Users\Usuario\git\Internet-Laboratory-Project\Internet Laboratory\test is neither a directory nor an archive (.jar or .zip)
+Translatable source found in...
+Found 2737 cached/archived units.  Used 2737 / 2737 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Removing invalidated units
+Finding entry point classes
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2944 units from cache.
+Compiling...
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   50% complete (ETR: 5 seconds)
+   60% complete (ETR: 4 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 16,20 seconds
+Validating units:
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/client/Internet_Laboratory.java'
+      Line 79: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/ComposedIdKey.java'
+      Line 21: No source code is available for type java.util.StringTokenizer; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/Event.java'
+      Line 35: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+      Line 232: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 233: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 233: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 234: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 234: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 235: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 235: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 236: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 236: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 243: The method isAlphabetic(char) is undefined for the type Character
+      Line 277: The method isAlphabetic(char) is undefined for the type Character
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/PMF.java'
+      Line 7: No source code is available for type javax.jdo.PersistenceManagerFactory; did you forget to inherit a required module?
+      Line 7: No source code is available for type javax.jdo.JDOHelper; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/User.java'
+      Line 39: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+      Line 158: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 159: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 159: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 160: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 160: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 161: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 161: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 162: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 162: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 174: The method isAlphabetic(char) is undefined for the type Character
+      Line 186: The method isAlphabetic(char) is undefined for the type Character
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/Util_Event.java'
+      Line 11: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+      Line 16: No source code is available for type javax.jdo.PersistenceManager; did you forget to inherit a required module?
+      Line 63: No source code is available for type javax.jdo.Query; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/Util_User.java'
+      Line 10: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+      Line 11: No source code is available for type javax.jdo.PersistenceManager; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+   [ERROR] Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/client/Internet_Laboratory.java'
+      [ERROR] Line 79: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+   [ERROR] Unable to find type 'internet.laboratory.client.Internet_Laboratory'
+      [ERROR] Hint: Previous compiler errors may have made this type unavailable
+      [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+Public resources found in...
+Translatable source found in...
+Found 2944 cached/archived units.  Used 2944 / 2944 units from cache.
+Compiling...
+   Compilation completed in 0,00 seconds
+Validating units:
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/client/Internet_Laboratory.java'
+      Line 79: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/ComposedIdKey.java'
+      Line 21: No source code is available for type java.util.StringTokenizer; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/Event.java'
+      Line 35: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+      Line 232: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 233: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 233: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 234: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 234: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 235: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 235: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 236: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 236: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 243: The method isAlphabetic(char) is undefined for the type Character
+      Line 277: The method isAlphabetic(char) is undefined for the type Character
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/PMF.java'
+      Line 7: No source code is available for type javax.jdo.PersistenceManagerFactory; did you forget to inherit a required module?
+      Line 7: No source code is available for type javax.jdo.JDOHelper; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/User.java'
+      Line 39: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+      Line 158: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 159: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 159: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 160: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 160: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 161: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 161: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 162: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 162: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 174: The method isAlphabetic(char) is undefined for the type Character
+      Line 186: The method isAlphabetic(char) is undefined for the type Character
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/Util_Event.java'
+      Line 11: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+      Line 16: No source code is available for type javax.jdo.PersistenceManager; did you forget to inherit a required module?
+      Line 63: No source code is available for type javax.jdo.Query; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/Util_User.java'
+      Line 10: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+      Line 11: No source code is available for type javax.jdo.PersistenceManager; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+   [ERROR] Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/client/Internet_Laboratory.java'
+      [ERROR] Line 79: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+   [ERROR] Unable to find type 'internet.laboratory.client.Internet_Laboratory'
+      [ERROR] Hint: Previous compiler errors may have made this type unavailable
+      [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+Public resources found in...
+Translatable source found in...
+Found 2942 cached/archived units.  Used 2942 / 2944 units from cache.
+Compiling...
+   Compilation completed in 0,17 seconds
+Invalid Unit: internet.laboratory.shared.Util_Event
+Invalid Unit: internet.laboratory.shared.Event_User
+Invalid units found: 2
+Compiling...
+   Compilation completed in 0,04 seconds
+Validating units:
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/ComposedIdKey.java'
+      Line 21: No source code is available for type java.util.StringTokenizer; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/Event.java'
+      Line 35: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+      Line 232: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 233: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 233: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 234: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 234: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 235: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 235: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 236: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 236: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 243: The method isAlphabetic(char) is undefined for the type Character
+      Line 277: The method isAlphabetic(char) is undefined for the type Character
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/PMF.java'
+      Line 7: No source code is available for type javax.jdo.PersistenceManagerFactory; did you forget to inherit a required module?
+      Line 7: No source code is available for type javax.jdo.JDOHelper; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/User.java'
+      Line 39: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+      Line 158: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 159: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 159: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 160: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 160: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 161: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 161: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 162: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 162: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 174: The method isAlphabetic(char) is undefined for the type Character
+      Line 186: The method isAlphabetic(char) is undefined for the type Character
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/Util_Event.java'
+      Line 11: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+      Line 16: No source code is available for type javax.jdo.PersistenceManager; did you forget to inherit a required module?
+      Line 17: The constructor Event(String, GregorianCalendar, String, String, String, Double, Integer, TypeEvent, String, Boolean, Integer, String) is undefined
+      Line 63: No source code is available for type javax.jdo.Query; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/Util_User.java'
+      Line 10: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+      Line 11: No source code is available for type javax.jdo.PersistenceManager; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,05 seconds
+      Removing invalidated units
+Public resources found in...
+Translatable source found in...
+Found 0 cached/archived units.  Used 0 / 2944 units from cache.
+Compiling...
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   40% complete (ETR: 6 seconds)
+   50% complete (ETR: 5 seconds)
+   60% complete (ETR: 4 seconds)
+   70% complete (ETR: 3 seconds)
+   80% complete (ETR: 2 seconds)
+   90% complete (ETR: 1 seconds)
+   100% complete (ETR: 0 seconds)
+   Compilation completed in 16,36 seconds
+Validating units:
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/ComposedIdKey.java'
+      Line 21: No source code is available for type java.util.StringTokenizer; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/Event.java'
+      Line 232: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 233: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 233: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 234: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 234: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 235: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 235: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 236: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 236: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 243: The method isAlphabetic(char) is undefined for the type Character
+      Line 277: The method isAlphabetic(char) is undefined for the type Character
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/PMF.java'
+      Line 7: No source code is available for type javax.jdo.PersistenceManagerFactory; did you forget to inherit a required module?
+      Line 7: No source code is available for type javax.jdo.JDOHelper; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/User.java'
+      Line 39: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+      Line 158: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 159: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 159: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 160: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 160: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 161: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 161: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 162: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 162: The method isDigit(char) in the type Character is not applicable for the arguments (int)
+      Line 174: The method isAlphabetic(char) is undefined for the type Character
+      Line 186: The method isAlphabetic(char) is undefined for the type Character
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/Util_Event.java'
+      Line 16: No source code is available for type javax.jdo.PersistenceManager; did you forget to inherit a required module?
+      Line 63: No source code is available for type javax.jdo.Query; did you forget to inherit a required module?
+   Errors in 'file:/C:/Users/Usuario/git/Internet-Laboratory-Project/Internet%20Laboratory/src/internet/laboratory/shared/Util_User.java'
+      Line 10: No source code is available for type java.util.GregorianCalendar; did you forget to inherit a required module?
+      Line 11: No source code is available for type javax.jdo.PersistenceManager; did you forget to inherit a required module?
+Removing invalidated units
+Finding entry point classes
+Rebinding com.google.gwt.i18n.client.impl.LocaleInfoImpl
+   Invoking generator com.google.gwt.i18n.rebind.LocaleInfoGenerator
+      Processing interface com.google.gwt.i18n.client.constants.NumberConstantsImpl
+         Generating method body for notANumber()
+         Generating method body for currencyPattern()
+         Generating method body for decimalPattern()
+         Generating method body for decimalSeparator()
+         Generating method body for defCurrencyCode()
+         Generating method body for exponentialSymbol()
+         Generating method body for globalCurrencyPattern()
+         Generating method body for groupingSeparator()
+         Generating method body for infinity()
+         Generating method body for minusSign()
+         Generating method body for monetaryGroupingSeparator()
+         Generating method body for monetarySeparator()
+         Generating method body for percent()
+         Generating method body for percentPattern()
+         Generating method body for perMill()
+         Generating method body for plusSign()
+         Generating method body for scientificPattern()
+         Generating method body for simpleCurrencyPattern()
+         Generating method body for zeroDigit()
+   Adding '3' new generated units
+      Compiling...
+         Compilation completed in 0,04 seconds
+      Removing invalidated units

@@ -1,7 +1,7 @@
 package internet.laboratory.shared;
 
 import java.io.Serializable;
-import java.util.GregorianCalendar;
+import java.util.Date;
 import java.util.Set;
 
 import javax.jdo.annotations.Extension;
@@ -32,7 +32,7 @@ public class Event implements Serializable {
 	private String Name;
 
 	@Persistent
-	private GregorianCalendar Date;
+	private Date Date;
 
 	@Persistent
 	private String Address;
@@ -64,7 +64,7 @@ public class Event implements Serializable {
 	@Persistent
 	private String Description;
 
-	public Event(String name, GregorianCalendar date, String address,
+	public Event(String name, Date date, String address,
 			String phone, String email, Double price, Integer maxPeople,
 			TypeEvent type, String dresscode, Boolean bringOwnAlcohol,
 			Integer ageNeeded, String description) {
@@ -100,11 +100,11 @@ public class Event implements Serializable {
 		Name = name;
 	}
 
-	public GregorianCalendar getDate() {
+	public Date getDate() {
 		return Date;
 	}
 
-	public void setDate(GregorianCalendar date) {
+	public void setDate(Date date) {
 		Date = date;
 	}
 
@@ -248,8 +248,8 @@ public class Event implements Serializable {
 		return res;
 	}
 
-	private boolean checkDate(GregorianCalendar date) {
-		GregorianCalendar current = new GregorianCalendar();
+	private boolean checkDate(Date date) {
+		Date current = new Date();
 		return date.before(current) && date != null;
 	}
 
@@ -290,8 +290,11 @@ public class Event implements Serializable {
 		}
 		return res;
 	}
-
-	@OneToMany(mappedBy = "Event_User", cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
-	private Set<Event_User> eventUser;
+	
+	@Persistent
+	private Event_User events;
+	
+//	@OneToMany(mappedBy = "Event_User", cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
+//	private Set<Event_User> eventUser;
 
 }

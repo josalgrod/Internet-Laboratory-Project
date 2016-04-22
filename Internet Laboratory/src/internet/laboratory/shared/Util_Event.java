@@ -1,6 +1,6 @@
 package internet.laboratory.shared;
 
-import java.util.GregorianCalendar;
+import java.util.Date;
 import java.util.List;
 
 import javax.jdo.PersistenceManager;
@@ -8,7 +8,7 @@ import javax.jdo.Query;
 
 public class Util_Event {
 
-	public void addEvent(String name, GregorianCalendar date, String address,
+	public void addEvent(String name, Date date, String address,
 			String phone, String mail, Double price, Integer maxPeople,
 			TypeEvent type, String dresscode, Boolean bringOwnAlcohol,
 			Integer ageNeeded, String description) {
@@ -24,7 +24,7 @@ public class Util_Event {
 
 	}
 
-	public void updateEvent(Event event, String name, GregorianCalendar date,
+	public void updateEvent(Event event, String name, Date date,
 			String address, String phone, String mail, Double price,
 			Integer maxPeople, TypeEvent type, String dresscode,
 			Boolean bringOwnAlcohol, Integer ageNeeded, String description) {
