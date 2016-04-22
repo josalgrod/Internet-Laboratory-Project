@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Main page</title>
+	</head>
+	<body>
+		<div>
+			<h1 onclick="Main page.html">Party & Go</h1>
+			<a href="logout">Logout</a>
+			<img id="profile picture" src="" onclick="Profile.html"/>
+			<label>Name</label>
+			<button type="button" onclick="Settings.html" id="settings" name="settings">
+				Settings
+			</button>
+			<input type="text"/>
+		</div>
+		<button id="create event" name="create event" type="button">
+			Create Event
+		</button>
+		<button id="update event" name="update event" type="button">
+			Update Event
+		</button>
+		<button id="delete event" name="delete event" type="button">
+			Delete Event
+		</button>
+		<div>
+			<h2>Creating a new Event</h2>
+
+			<form>
+				<p>
+					Name:
+				</p>
+				<input type="text" id="nameEvent" name="nameEvent" required="required" />
+				<p>
+					Date:
+				</p>
+				<input type="datetime" id="dateEvent" name="dateEvent" required="required" />
+				<p>
+					Address:
+				</p>
+				<input type="text" id="addressEvent" name="addressEvent" required="required" />
+				<p>
+					Phone:
+				</p>
+				<input type="number" id="phoneEvent" name="phoneEvent" required="required" maxlength="9"/>
+				<p>
+					Email:
+				</p>
+				<input type="email" id="emailEvent" name="emailEvent" required="required"/>
+				<p>
+					Price:
+				</p>
+				<input type="number" id="priceEvent" name="priceEvent" required="required"/>
+				<p>
+					Max.People:
+				</p>
+				<input type="number" id="maxPeopleEvent" name="maxPeopleEvent" required="required"/>
+				<p>
+					Min.Age:
+				</p>
+				<input type="number" id="ageEvent" name="ageEvent" />
+				<p>
+					Type
+				</p>
+				<select name="typeEvent">
+					<option value="MEETING">Meeting</option>
+					<option value="SPORTS">Sports</option>
+					<option value="PARTY">Party</option>
+					<option value="OTHER">Other</option>
+				</select>
+				<p>
+					Bring Alcohol
+				</p>
+				<input type="radio" name="alcoholEvent" value="true" checked>
+				Yes
+				<br>
+				<input type="radio" name="alcoholEvent" value="false">
+				No
+				<br>
+				<p>
+					Dress code:
+				</p>
+				<input type="text" name="dressEvent" id="dressEvent" />
+				<p>
+					Description:
+				</p>
+				<textarea name="descriptionEvent" rows="10" cols="30"></textarea>
+			</form>
+
+		</div>
+		<div>
+
+		</div>
+	</body>
+</html>
