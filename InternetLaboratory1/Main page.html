@@ -1,33 +1,47 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Main page</title>
-</head>
-<body>
-<div>
-<h1 onclick="Main page.html">Party & Go</h1>
-<a href="logout">Logout</a>
-<img id="profile picture" src="" onclick="Profile.html"/>
-<label>Name</label>
-<button type="button" onclick="Settings.html" id="settings" name="settings">Settings</button>
-<input type="text"/>
-</div>
-<button id="create event" name="create event" type="button">Create Event</button>
-<button id="update event" name="update event" type="button">Update Event</button>
-<button id="delete event" name="delete event" type="button">Delete Event</button>
-<div>
-	<h2>Your events</h2>
-	<table>
-		<tr>
-			<td>Name</td>
-			<td>Date</td>
-			<td>Time</td>
-		</tr>
-	</table>
-</div>
-<div>
-	
-</div>
-</body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Main page</title>
+	</head>
+	<body>
+		<div>
+			<h1 onclick="Main page.html">Party & Go</h1>
+			<a href="logout">Logout</a>
+			<img id="profile picture" src="" onclick="Profile.html"/>
+			<label id="nameSkeleton">Name</label>
+			<button type="button" onclick="Settings.html" id="settings" name="settings">
+				Settings
+			</button>
+			<input type="text"/>
+		</div>
+		<p>
+			<button id="create event" name="create event" type="button">
+				Create Event
+			</button>
+		</p>
+		<p>
+			<button id="update event" name="update event" type="button">
+				Update Event
+			</button>
+		</p>
+		<p>
+			<button id="delete event" name="delete event" type="button">
+				Delete Event
+			</button>
+		</p>
+		<div>
+			<h2>Your events</h2>
+			<table>
+				<tr>
+					<td>Name</td>
+					<td>Date</td>
+					<td>Time</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+
+		</div>
+	</body>
 </html>
