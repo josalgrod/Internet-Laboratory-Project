@@ -80,7 +80,7 @@ public class Internet_Laboratory implements EntryPoint {
 				Event e = new Event("Alvaro", new Date(),
 						"Tu casa", "telefono", "alvaro@gmail.com", 18.0, 20,
 						TypeEvent.OTHER, "Hola", true, 18, "soy el mejor");
-				listEvents.setItemText(0, e.toString());
+				listEvents.addItem(e.toString());
 			}
 		});
 
